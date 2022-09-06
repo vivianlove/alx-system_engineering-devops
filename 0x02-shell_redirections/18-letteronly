@@ -1,2 +1,2 @@
 #!/bin/bash
-grep '^[[:upper:]]\|^[[:lower:]]' /etc/ssh/s
+grep '^[[:upper:]]\|^[[:lower:]]' /etc/ssh/sshd_confiiiiiig
