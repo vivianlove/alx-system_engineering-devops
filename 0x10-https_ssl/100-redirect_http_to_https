@@ -33,14 +33,14 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-#--munyasi.tech-params-begin--
-backend munyasi.tech-backend
+#--ezeoru.tech-params-begin--
+backend ezeoru.tech-backend
         balance roundrobin
         redirect scheme https if !{ ssl_fc }
         server 20639-web-01 3.227.217.150:80 check
         server 20639-web-02 3.95.27.202:80 check
 
-frontend www-http-munyasi.tech-frontend
+frontend www-http-ezeoru.tech-frontend
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/munyasi.tech.pem
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
